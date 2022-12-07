@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    background-color: #2a2734;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fefefe;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 50s infinite forwards linear;
+}
+
+.img {
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .5);
+    display: flex;
+}
+
+span {
+    margin: auto;
+    font-size: 2rem;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.img:nth-child(1) {
+    background-image: url('https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/8532171bec0d05bfe45769a330fbab82.jpeg');
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.img:nth-child(2) {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BODFmYTUwYzMtM2M2My00NGExLWIzMDctYmRjNTNhZDc4MGI2XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg');
+    transform: rotateY(45deg) translateZ(430px);
+}
+
+.img:nth-child(3) {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BODcwNWE3OTMtMDc3MS00NDFjLWE1OTAtNDU3NjgxODMxY2UyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg');
+    transform: rotateY(90deg) translateZ(430px);
+}
+
+.img:nth-child(4) {
+    background-image: url('https://demonslayer-hinokami.sega.com/img/purchase/digital-standard.jpg');
+    transform: rotateY(135deg) translateZ(430px);
+}
+
+.img:nth-child(5) {
+    background-image: url('https://static.tvtropes.org/pmwiki/pub/images/0600dcd1_5611_4209_8035_6078bdaf9f91.png');
+    transform: rotateY(180deg) translateZ(430px);
+}
+
+.img:nth-child(6) {
+    background-image: url('https://cdn.oneesports.gg/cdn-data/2022/01/AttackonTitan_FinalSeasonKeyVisualEren-1.jpg');
+    transform: rotateY(225deg) translateZ(430px);
+}
+
+.img:nth-child(7) {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BNjRiNmNjMmMtN2U2Yi00ODgxLTk3OTMtMmI1MTI1NjYyZTEzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg');
+    transform: rotateY(270deg) translateZ(430px);
+}
+
+.img:nth-child(8) {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f7801705-46de-42cc-8723-40235f515810/d8rc13h-51bcff7e-2d13-4336-b345-924826f47f57.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y3ODAxNzA1LTQ2ZGUtNDJjYy04NzIzLTQwMjM1ZjUxNTgxMFwvZDhyYzEzaC01MWJjZmY3ZS0yZDEzLTQzMzYtYjM0NS05MjQ4MjZmNDdmNTcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.uy43AF_1wL1CB0Mme_N632RtXPIA5ym1CTOFcuzo2ug');
+    transform: rotateY(315deg) translateZ(430px);
+}
